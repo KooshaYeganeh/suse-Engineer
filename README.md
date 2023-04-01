@@ -4,10 +4,13 @@ Setting your SUSE Linux to Engineering Linux
 
 ## Info
 
-**Set up your Linux workspace for your engineer's tasks with a single command and Scope**
+**Set up your SUSE Linux workspace for your engineer's tasks with a single command and Scope**
 
+The makers' choice for sysadmins, developers and desktop users.
 
-### Tools and commands
+[SUSE](https://www.opensuse.org/)
+
+### Tools
 
 - Mathematics
     - octave
@@ -38,6 +41,30 @@ Setting your SUSE Linux to Engineering Linux
     - librecad
 
 
+### Commands
+
+**--config**
+
+sudo-eng --config <area of expertise>
+
+```
+suse-eng --config electronic
+```
+or
+```
+sudo-eng --config CAD
+```
+**--info**
+
+```
+suse-eng --info electronic
+```
+
+```
+suse-eng --info CAD
+```
+
+and more ...
 
 
 ## Install
