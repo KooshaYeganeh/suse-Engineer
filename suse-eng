@@ -2,7 +2,7 @@
 
 
 
-if [ "$0" == "./suse-eng" ];then
+if [ "$0" == "suse-eng" ];then
 	if [ "$1" == "--configure" ] || [ "$1" == "--config" ];then
 		if [ "$2" == "Mathematical" ] || [ "$2" == "mathematical" ] || \
 			[ "$2" == "Mathematic" ] || [ "$2" == "mathematic" ];then
