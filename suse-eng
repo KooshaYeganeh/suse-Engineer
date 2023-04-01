@@ -57,17 +57,16 @@ if [ "$0" == "./suse-eng" ];then
 		
 		elif [ "$2" == "Electronics" ] || [ "$2" == "electronics" ] || \
 			[ "$2" == "Electronic" ] || [ "$2" == "electronic" ];then
-					echo "KiCad is an open source software suite for Electronic Design Automation (EDA). The programs handle Schematic Capture, and PCB Layout with Gerber output. The suite runs on Windows, Linux and macOS and is licensed under GNU GPL v3."
-					echo "For More Information : https://www.kicad.org/download/linux/"
-					echo "Fritzing : Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. We offer a software tool, a community website and services in the spirit of Processing and Arduino, fostering a creative ecosystem that allows users to document their prototypes, share them with others, teach electronics in a classroom, and layout and manufacture professional PCBs."
-					echo "For More Information : https://fritzing.org/"
+					echo -e "\n\n> KiCad is an open source software suite for Electronic Design Automation (EDA). The programs handle Schematic Capture, and PCB Layout with Gerber output. The suite runs on Windows, Linux and macOS and is licensed under GNU GPL v3."
+					echo -e "\tFor More Information : https://www.kicad.org/download/linux/"
+					echo -e "\n\n> Fritzing : Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. We offer a software tool, a community website and services in the spirit of Processing and Arduino, fostering a creative ecosystem that allows users to document their prototypes, share them with others, teach electronics in a classroom, and layout and manufacture professional PCBs.\n\tFor More Information : https://fritzing.org/"
 
 
 		elif [ "$2" == "cad" ] || [ "$2" == "CAD" ];then
-			echo "FreeCAD : FreeCAD is made primarily to design objects for the real world. Everything you do in FreeCAD uses real-world units, be it microns, kilometers, inches or feet, or even any combination of units. FreeCAD offers tools to produce, export and edit solid, full-precision models, export them for 3D printing or CNC machining, create 2D drawings and views of your models, perform analyses such as Finite Element Analyses, or export model data such as quantities or bills of materials"
-		       echo "FOr More Information : https://www.freecad.org/"
-		       echo "LibreCAD : LibreCAD is a free Open Source CAD application for Windows, Apple and Linux. Support and documentation are free from our large, dedicated community of users, contributors and developers."
-		       echo "For More Information : https://librecad.org/"
+			echo -e "\n\n> FreeCAD : FreeCAD is made primarily to design objects for the real world. Everything you do in FreeCAD uses real-world units, be it microns, kilometers, inches or feet, or even any combination of units. FreeCAD offers tools to produce, export and edit solid, full-precision models, export them for 3D printing or CNC machining, create 2D drawings and views of your models, perform analyses such as Finite Element Analyses, or export model data such as quantities or bills of materials"
+		       echo -e "\tFor More Information : https://www.freecad.org/"
+		       echo -e "\n\n> LibreCAD : LibreCAD is a free Open Source CAD application for Windows, Apple and Linux. Support and documentation are free from our large, dedicated community of users, contributors and developers."
+		       echo -e "\tFor More Information : https://librecad.org/"
 		fi
 
 	fi
