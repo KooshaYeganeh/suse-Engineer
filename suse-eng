@@ -52,8 +52,7 @@ if [ "$0" == "./suse-eng" ];then
 
 		elif [ "$2" == "Finite Element Analysis" ] || [ "$2" == "Finite-Element-Analysis" ] || \
 			[ "$2" == "finite element analysis" ] || [ "$2" == "finite-element-analysis" ];then
-					echo "netgen : Netgen/NGSolve is a high performance multiphysics finite element software. It is widely used to analyze models from solid mechanics, fluid dynamics and electromagnetics. Due to its flexible Python interface new physical equations and solution algorithms can be implemented easily."
-					echo "For more information : https://ngsolve.org/"
+					echo -e "\n\n> netgen : Netgen/NGSolve is a high performance multiphysics finite element software. It is widely used to analyze models from solid mechanics, fluid dynamics and electromagnetics. Due to its flexible Python interface new physical equations and solution algorithms can be implemented easily.\n\tFor more information : https://ngsolve.org/"
 		
 		elif [ "$2" == "Electronics" ] || [ "$2" == "electronics" ] || \
 			[ "$2" == "Electronic" ] || [ "$2" == "electronic" ];then
