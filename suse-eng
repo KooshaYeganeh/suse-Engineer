@@ -1,0 +1,79 @@
+#!/bin/bash
+
+
+
+if [ "$0" == "./suse-eng" ];then
+	if [ "$1" == "--configure" ] || [ "$1" == "--config" ];then
+		if [ "$2" == "Mathematical" ] || [ "$2" == "mathematical" ] || \
+			[ "$2" == "Mathematic" ] || [ "$2" == "mathematic" ];then
+				sudo zypper -n install octave
+				sudo zypper -n install jupyter-octave-kernel
+				sudo zypper -n install octave-CSXCAD
+				sudo zypper -n install pfstools-octave
+				sudo zypper -n install python3-octave-kernel
+				sudo zypper -n install "octave-forge-*"
+				sudo zypper -n install "OpenOctaveMidi*"
+				sudo zypper -n install scilab
+				sudo zypper -n install CSXCAD-matlab
+				sudo zypper -n install jupyter-matlab-kernel
+				sudo zypper -n install openEMS-matlab
+				sudo zypper -n install python3-jupyter_imatlab_kernel
+				sudo zypper -n install texlive-matlab-prettifier
+				sudo zypper -n install pfstools
+				sudo zypper -n install texlive-matlab-prettifier-doc
+
+
+		elif [ "$2" == "Finite Element Analysis" ] || [ "$2" == "Finite-Element-Analysis" ] || \
+			[ "$2" == "finite element analysis" ] || [ "$2" == "finite-element-analysis" ];then
+				sudo zypper -n install netgen
+		
+		elif [ "$2" == "Electronics" ] || [ "$2" == "electronics" ] || \
+			[ "$2" == "Electronic" ] || [ "$2" == "electronic" ];then
+				sudo zypper -n install "kicad*"
+				sudo zypper -n install "fritzing*"
+		elif [ "$2" == "cad" ] || [ "$2" == "CAD" ];then
+			sudo zypper -n install "freecad"
+			sudo zypper -n install "librecad"
+
+		fi
+	
+		
+	elif [ "$1" == "--info" ];then
+		if [ "$2" == "Mathematical" ] || [ "$2" == "mathematical" ] || \
+			[ "$2" == "Mathematic" ] || [ "$2" == "mathematic" ];then
+				echo -e "\n> Octave : GNU Octave is a FOSS high-level interpreted language, primarily intended for numerical computations of linear and nonlinear problems"
+				echo "> matlab-prettifier - The package extends the facilities of the listings package, to pretty-print Matlab and Octave source code"
+				echo -e "\n\n> Scilab Open source software for numerical computation"
+				echo -e "\tFor More Information : https://www.scilab.org/"
+				
+				echo -e "\n\n> pfstools : pfstools package is a set of command line programs for reading, writing and manipulating high-dynamic range (HDR) images and video frames. It includes also Qt and OpenGL HDR image viewers. pfstools can be integrated with GNU Octave or matlab, so that it can serve as a toolbox for reading and writing HDR images"
+				echo -e "\n\n> pfstools-octave : The pfstools-octave package contains programs to process red, green and blue channels or luminance channels in pfs stream using Octave."
+				echo -e "\n\n> openEMS-matlab : openEMS is a free and open-source electromagnetic field solver using the EC-FDTD method."
+
+		elif [ "$2" == "Finite Element Analysis" ] || [ "$2" == "Finite-Element-Analysis" ] || \
+			[ "$2" == "finite element analysis" ] || [ "$2" == "finite-element-analysis" ];then
+					echo "netgen : Netgen/NGSolve is a high performance multiphysics finite element software. It is widely used to analyze models from solid mechanics, fluid dynamics and electromagnetics. Due to its flexible Python interface new physical equations and solution algorithms can be implemented easily."
+					echo "For more information : https://ngsolve.org/"
+		
+		elif [ "$2" == "Electronics" ] || [ "$2" == "electronics" ] || \
+			[ "$2" == "Electronic" ] || [ "$2" == "electronic" ];then
+					echo "KiCad is an open source software suite for Electronic Design Automation (EDA). The programs handle Schematic Capture, and PCB Layout with Gerber output. The suite runs on Windows, Linux and macOS and is licensed under GNU GPL v3."
+					echo "For More Information : https://www.kicad.org/download/linux/"
+					echo "Fritzing : Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. We offer a software tool, a community website and services in the spirit of Processing and Arduino, fostering a creative ecosystem that allows users to document their prototypes, share them with others, teach electronics in a classroom, and layout and manufacture professional PCBs."
+					echo "For More Information : https://fritzing.org/"
+
+
+		elif [ "$2" == "cad" ] || [ "$2" == "CAD" ];then
+			echo "FreeCAD : FreeCAD is made primarily to design objects for the real world. Everything you do in FreeCAD uses real-world units, be it microns, kilometers, inches or feet, or even any combination of units. FreeCAD offers tools to produce, export and edit solid, full-precision models, export them for 3D printing or CNC machining, create 2D drawings and views of your models, perform analyses such as Finite Element Analyses, or export model data such as quantities or bills of materials"
+		       echo "FOr More Information : https://www.freecad.org/"
+		       echo "LibreCAD : LibreCAD is a free Open Source CAD application for Windows, Apple and Linux. Support and documentation are free from our large, dedicated community of users, contributors and developers."
+		       echo "For More Information : https://librecad.org/"
+		fi
+
+	fi
+
+else
+	echo "Did Your Mean is suse-ng? check command and Try Again"
+
+fi
+			
